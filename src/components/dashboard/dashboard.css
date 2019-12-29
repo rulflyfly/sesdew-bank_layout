@@ -1,0 +1,85 @@
+/* Формы и инпуты */
+/* Меню */
+/* Toolbox */
+/* Карточки */
+/* Кпоки */
+/* Иконки */
+/* Таблица банка*/
+/* Общие */
+@font-face {
+  font-family: 'icomoon';
+  src: url('../../fonts/icomoon.eot?729rdg');
+  src: url('../../fonts/icomoon.eot?729rdg#iefix') format('embedded-opentype'), url('../../fonts/icomoon.ttf?729rdg') format('truetype'), url('../../fonts/icomoon.woff?729rdg') format('woff'), url('../../fonts/icomoon.svg?729rdg#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+i {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-banks:before {
+  content: "\e900";
+}
+
+.icon-profiles:before {
+  content: "\e90d";
+}
+
+.icon-settings:before {
+  content: "\e911";
+}
+
+.dashboard .cards .card__icon {
+  color: #0021CC;
+  font-size: 30px;
+}
+
+.dashboard {
+    box-sizing: border-box;
+    width: 1000px;
+  }
+  .dashboard .cards {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 80px;
+    padding-left: 20px;
+  }
+  .dashboard .cards .card {
+    box-sizing: border-box;
+    width: 200px;
+    margin-left: 30px;
+    margin-bottom: 30px;
+    padding-top: 10px;
+    padding-left: 20px;
+    background: #F7F8FC;
+    border: 1px solid #DFE0EB;
+    color: #000000;
+    text-decoration: none;
+  }
+  .dashboard .cards .card__title {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 16px;
+    line-height: 21px;
+    font-weight: normal;
+  }
+  .dashboard .cards .card__icon {
+    color: #0021CC;
+    font-size: 30px;
+  }
+  .dashboard .cards .card__description {
+    font-size: 12px;
+    line-height: 16px;
+  }
+  

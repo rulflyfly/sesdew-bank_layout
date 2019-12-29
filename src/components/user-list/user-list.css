@@ -1,0 +1,131 @@
+@font-face {
+    font-family: 'icomoon';
+    src: url('/fonts/icomoon.eot?729rdg');
+    src: url('/fonts/icomoon.eot?729rdg#iefix') format('embedded-opentype'), url('/fonts/icomoon.ttf?729rdg') format('truetype'), url('/fonts/icomoon.woff?729rdg') format('woff'), url('/fonts/icomoon.svg?729rdg#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+  i {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  .icon-appr-banks:before {
+    content: "\e915";
+  }
+
+.wrapper {
+    box-sizing: border-box;
+    min-width: 100vw;
+    padding-right: 40px;
+    padding-bottom: 40px;
+    padding-left: 40px;
+    background: #F7F8FC;
+  }
+
+  .header {
+    margin-top: 25px;
+  }
+  .header__title {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: normal;
+  }
+
+  .delimiter {
+    height: 1px;
+    margin: 0;
+    background: #DFE0EB;
+    border: none;
+  }
+
+  .table__header {
+    display: flex;
+    margin-top: 35px;
+    margin-bottom: -20px;
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .table__header .table__login {
+    margin-left: 300px;
+  }
+
+  .table__header .table__user-name {
+  margin-left: 90px;
+}
+
+.table-content {
+    box-sizing: border-box;
+    width: 920px;
+    height: 70vh;
+    margin-top: 40px;
+    padding-top: 30px;
+    padding-right: 10px;
+    padding-bottom: 30px;
+    padding-left: 10px;
+    background: #FFFFFF;
+    border: 1px solid #DFE0EB;
+  }
+
+  .table-content .table__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .table-content .table__row .row__user-title {
+    width: 265px;
+  }
+
+  .table-content .table__row .row__user-login {
+    margin: 0;
+    width: 200px;
+    text-align: center;
+  }
+
+ 
+  .table-content .table__row .row__btns .del-btn,
+  .table-content .table__row .row__btns .passgen-btn{
+    box-sizing: border-box;
+    border-radius: 2px;
+    font-size: 12px;
+    line-height: 16px;
+    text-decoration: none;
+  }
+  
+  .table-content .table__row .row__btns .passgen-btn {
+    padding: 3px 5px;
+    background: transparent;
+  }
+
+  .table-content .table__row .row__btns .passgen-btn {
+    border: 1px solid #29CC97;
+    color: #000000;
+  }
+
+  .table-content .table__row .row__btns .del-btn {
+    margin-left: 10px;
+    padding: 3px 10px;
+    background: #F12B2C;
+    border: 1px solid #F12B2C;
+    color: #FFFFFF;
+  }

@@ -1,0 +1,149 @@
+/* Формы и инпуты */
+/* Меню */
+/* Toolbox */
+/* Карточки */
+/* Кпоки */
+/* Иконки */
+/* Таблица банка*/
+/* Общие */
+@font-face {
+  font-family: 'icomoon';
+  src: url('../../fonts/icomoon.eot?729rdg');
+  src: url('../../fonts/icomoon.eot?729rdg#iefix') format('embedded-opentype'), url('../../fonts/icomoon.ttf?729rdg') format('truetype'), url('../../fonts/icomoon.woff?729rdg') format('woff'), url('../../fonts/icomoon.svg?729rdg#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+i {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-plus:before {
+  content: "\e90c";
+}
+
+.nav .nav__btns .btn-item .icon-main_menu:before,
+.nav .nav__btns .btn-item .icon-plus:before {
+  margin-right: 5px;
+}
+
+.icon-main_menu:before {
+  content: "\e909";
+}
+
+.nav {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    position: relative;
+    min-width: 200px;
+    max-width: 200px;
+    background: #363740;
+    color: #DDE2FF;
+  }
+  .nav .user {
+    display: flex;
+    align-self: center;
+    align-items: center;
+    margin-top: 10px;
+  }
+  .nav .user__avatar {
+    box-sizing: border-box;
+    width: 64px;
+    margin-right: 10px;
+    border: 1px solid #0021CC;
+    border-radius: 50%;
+  }
+  .nav .user__lastname {
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 18px;
+  }
+  .nav .user__firstname {
+    font-size: 12px;
+    font-weight: normal;
+    line-height: 16px;
+  }
+  .nav .menu {
+    margin-top: 20px;
+    padding: 0;
+  }
+  .nav .menu-item {
+    list-style: none;
+  }
+  .nav .menu-item__link {
+    display: block;
+    position: relative;
+    height: 16px;
+    padding-top: 8px;
+    padding-right: 8px;
+    padding-bottom: 6px;
+    padding-left: 10px;
+    color: #DDE2FF;
+    font-size: 12px;
+    line-height: 16px;
+    text-decoration: none;
+  }
+  .nav .menu-item__link .icon-yes,
+  .nav .menu-item__link .icon-no {
+    position: absolute;
+    right: 15px;
+  }
+  .nav .menu-item__link .icon-yes {
+    color: #29CC97;
+  }
+  .nav .menu-item__link .icon-no {
+    color: #F12B2C;
+  }
+  .nav .menu-item_active {
+    background-color: #42434e;
+    border-left: 2px solid #DFE0EB;
+  }
+  .nav .menu-item:hover {
+    background-color: #4d4f5c;
+  }
+  .nav .nav__btns {
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 200px;
+    padding-bottom: 30px;
+  }
+  .nav .nav__btns .btn-item {
+    box-sizing: border-box;
+    width: 180px;
+    height: 30px;
+    margin-top: 16px;
+    padding-left: 10px;
+    background: #0021CC;
+    border: none;
+    border-radius: 2px;
+    color: #FFFFFF;
+    font-size: 12px;
+    line-height: 30px;
+    text-decoration: none;
+  }
+  .nav .nav__btns .btn-item .icon-main_menu:before,
+  .nav .nav__btns .btn-item .icon-plus:before {
+    margin-right: 5px;
+  }
+  .nav .nav__btns .btn-item p {
+    display: inline;
+  }
+  .nav .nav__btns .exit__btn {
+    padding-left: 0;
+    text-align: center;
+  }
+  

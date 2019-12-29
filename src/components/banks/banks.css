@@ -1,0 +1,81 @@
+.wrapper {
+    box-sizing: border-box;
+    min-width: 1000px;
+    max-width: 1000px;
+    padding-right: 40px;
+    padding-bottom: 40px;
+    padding-left: 40px;
+    background: #F7F8FC;
+  }
+
+  .header {
+    margin-top: 25px;
+  }
+
+  .header__title {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: normal;
+  }
+
+  .delimiter {
+    height: 1px;
+    margin: 0;
+    background: #DFE0EB;
+    border: none;
+  }
+
+  .table-content {
+    box-sizing: border-box;
+    width: 920px;
+    margin-top: 40px;
+    padding-top: 30px;
+    padding-right: 10px;
+    padding-bottom: 30px;
+    padding-left: 10px;
+    background: #FFFFFF;
+    border: 1px solid #DFE0EB;
+  }
+
+  .table-content .table__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .table-content .table__row .row__bank-title {
+  margin: 0;
+}
+
+.table-content .table__row .row__btns .edit-btn,
+.table-content .table__row .row__btns .del-btn {
+  box-sizing: border-box;
+  border-radius: 2px;
+  font-size: 12px;
+  line-height: 16px;
+  text-decoration: none;
+}
+
+.table-content .table__row .row__btns .edit-btn {
+  padding: 3px 5px;
+  background: transparent;
+}
+.table-content .table__row .row__btns .edit-btn {
+  border: 1px solid #0021CC;
+  color: #0021CC;
+}
+.table-content .table__row .row__btns .del-btn {
+  margin-left: 10px;
+  padding: 3px 10px;
+  background: #F12B2C;
+  border: 1px solid #F12B2C;
+  color: #FFFFFF;
+}
