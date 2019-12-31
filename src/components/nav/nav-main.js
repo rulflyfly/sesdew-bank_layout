@@ -4,7 +4,8 @@ import { Link } from 'react-router-dom';
 import './nav-main.css';
 import  Avatar from "../../images/avatar.png";
 
-const Nav = () => {
+const Nav = ({ onLogout }) => {
+
     return (
         <nav className="nav">
             <div className="user">
@@ -20,7 +21,8 @@ const Nav = () => {
                 <li className="menu-item"><a className="menu-item__link" href="#">Помощь</a></li>
             </ul>
             <div className="nav__btns">
-                <Link className="btn-item exit__btn" to="/">Выход</Link>
+                <button className="btn-item exit__btn" 
+                 onClick={ () => onLogout() }>Выход</button>
             </div>
         </nav>
     )

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Redirect } from 'react-router-dom';
 
 import LoginPage from '../login/login';
 import Dashboard from '../dashboard/dashboard';
@@ -23,16 +23,29 @@ export default class App extends Component {
     state = {
         isLoggedIn: false
     }
+    
 
-    onLogin = () => {
-        this.setState({
-            isLoggedIn: true
-        })
+    onLogin = (validated) => {
+            console.log('clicked')
+            this.setState({isLoggedIn: validated})
+            console.log(validated)
     }
+
+    onLogout = () => {
+        this.setState({isLoggedIn: false})
+    }
+
 
     render() {
         
         const { isLoggedIn } = this.state;
+       
+        if (!isLoggedIn) {
+            return ( 
+            <LoginPage isLoggedIn={isLoggedIn}
+            onLogin={this.onLogin}
+            /> )
+        }
 
         return (
             <div>
@@ -45,7 +58,9 @@ export default class App extends Component {
                         )
                     }} />
                     <div className="container">
-                    <Route path='/main-page/:path?' exact render={() => <Nav />} />
+
+                    <Route path='/main-page/:path?' exact render={() => <Nav onLogout={this.onLogout}/>} />
+
                     <Route path='/main-page/dashboard' render={() => <Dashboard />} />
                     <Route path='/main-page/nav-banks/:path?' render={() => <NavBanks />} />
                     <Route path='/main-page/nav-banks/bank-list' render={() => <Banks />} />
